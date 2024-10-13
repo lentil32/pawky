@@ -1,4 +1,4 @@
-from awk.interpreter import AWKInterpreter
+from pawky import AWKInterpreter
 
 
 def run_test(title: str, awk_script: str, input_data: str) -> None:
