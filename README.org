@@ -1,0 +1,25 @@
+* PAWKY - AWK Interpreter Written in Python
+
+This library is an interpreter for a small subset of the AWK language.
+
+** How to setup and run tests
+#+begin_src Makefile
+make setup
+make test
+#+end_src
+
+** How to install and use
+
+Since it's not yet packaged, simply copy the `awk` directory into your project and import it as follows:
+
+#+begin_src python
+from awk.interpreter import AWKInterpreter
+
+awk_script = "<AWK script>"  # Input your script
+
+interpreter = AWKInterpreter(awk_script)
+interpreter.set_input(input_data)
+interpreter.run()
+#+end_src
+
+For more information, please refer to ~test.py~.
