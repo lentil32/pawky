@@ -6,7 +6,7 @@ VENV=.venv
 setup: clean
 	$(PYTHON) -m venv $(VENV)
 	./$(VENV)/bin/python -m pip install --upgrade pip
-	./$(VENV)/bin/python -m pip install -r requirements.txt
+	./$(VENV)/bin/python -m pip install -e .
 
 install:
 	$(PYTHON) -m pip install -e .
